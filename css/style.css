@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'IRANSansWeb UltraLight';
+    src: url('IRANSansWeb_UltraLight.woff2') format('woff2'),
+    url('IRANSansWeb_UltraLight.woff') format('woff'),
+    url('IRANSansWeb_UltraLight.ttf') format('truetype');
+}
+html body {background-color: #29B6F6; font-family: "IRANSansWeb UltraLight"}
+.header{
+    font-size: 1.20em;
+    width: 98%;
+    margin: auto;
+    position: relative;
+    background-color: aliceblue;
+    color: #0f6f9a;
+    margin-top: 10px;
+    text-align: center;
+    padding: 12px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+.box-form{
+    background-color: aliceblue;
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    padding: 12px;
+    border-radius: 7px;
+    color: #0f6f9a;
+
+}
+.input-border{
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+input{
+    text-align: center;
+}
+select{
+    text-align-last:center;
+    direction: rtl;
+}
+.border-fix{
+    border-right: 0;
+}
+input::placeholder{
+    text-align: center;
+    font-size: 0.8em;
+}
+th , tr {background-color: #fff;}
+#Amount:before { content:'$'; }
+@media only screen and (max-width: 1024px) {
+    .box-form{width: 95%}
+    .input-group-text , select {font-size: x-small}
+    input::placeholder{font-size: xx-small}
+}
+@media only screen and (max-width: 414px) {
+    .input-group-text , select {font-size: smaller}
+    input::placeholder{font-size: smaller}
+}
